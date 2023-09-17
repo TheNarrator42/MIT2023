@@ -177,13 +177,13 @@ class StableDiffusion:
 
 @stub.local_entrypoint()
 def entrypoint(
-    prompt: str, samples: int = 5, steps: int = 10, batch_size: int = 1
+    prompt: str, samples: int = 1, steps: int = 10, batch_size: int = 1
 ):
     print(
         f"prompt => {prompt}, steps => {steps}, samples => {samples}, batch_size => {batch_size}"
     )
 
-    dir = Path("../static/images/")
+    dir = Path("./static/images/")
     if not dir.exists():
         dir.mkdir(exist_ok=True, parents=True)
 
