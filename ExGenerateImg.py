@@ -1,6 +1,6 @@
 import os
 
-userPrompt = 'red firetruck'
+userPrompt = 'Confucious the Philosopher'
 
 input = "\'" + userPrompt + "\'"
 
