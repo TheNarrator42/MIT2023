@@ -11,7 +11,7 @@
       <div class="row">
          <div class="column">
             <h2>1</h2>
-            <img src="../static/images/test.PNG" alt="Test" />
+            <img src="../static/images/you.PNG" alt="you" class = "widthSet" />
          </div>
          <div class="column">
             <h2>2</h2>
@@ -19,7 +19,9 @@
          </div>
          <div class="column">
             <h2>3</h2>
-            <p>hello</p>
+            {% for image_name in image_names %}
+            <img src="{{ url_for('static', filename='images/' + image_name) }}" alt="{{ image_name }}" class = "widthSet">
+            {% endfor %}
          </div>
        </div>
 
