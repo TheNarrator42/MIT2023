@@ -9,6 +9,10 @@
     width: 32%;
     padding: 10px;
   }
+  .widthSet {
+    max-width: 100%;
+}
+
 #notes{
     overflow-wrap: anywhere;
 }
