@@ -10,10 +10,9 @@ document.getElementById('button').addEventListener('click', function() {
     .then(response => response.text())
     .then(data => {
     // Process the result received from the server
-    alert('Response from server: ' + data);
     document.getElementById("inputImage").src="../static/images/output_0_0.png";
     document.getElementById("inputText").innerHTML = document.getElementById('email').value;
-    document.getElementById("inputKeyword").innerHTML = "Prompt: " + data;
+    document.getElementById("inputKeyword").innerHTML = "Prompt Keyword: " + data;
     console.log('Hello');
     })
     .catch(error => {
