@@ -27,7 +27,7 @@
               <p class="lead text-body-secondary">Welcome to Auto Notes! Plug in any lecture transcript or written notes and we'll use AI backed algorithms to generate diagrams to go with them!</p>
               <p>
                 <input type="email" class="form-control" id="email" placeholder="Paste your lecture excerpt here">
-                <a href="#" class="btn btn-primary my-2">Try it!</a>
+                <a href="#" id="button" class="btn btn-primary my-2">Try it!</a>
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@
               
                 <div class="col">
                 <div class="card shadow-sm">
-                  <img src="DemoImages/Zeus.png" alt="AI generate Zeus God img" width="100%" height="225">
+                  <img src="../static/DemoImages/Zeus.png" alt="AI generate Zeus God img" width="100%" height="225">
                   <div class="card-body">
                     <p class="card-text">Example 1: Zeus, King of the Gods in Greek mythology.</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -49,14 +49,14 @@
                   </div>
                 </div>
               </div>
-
+              
               <div class="col">
                 <div class="card shadow-sm">
-                  <img src="https://uploads-ssl.webflow.com/60abcbf13c9af64a88390582/6230f5f37b84136a6985b3df_899889.jpg" alt="AI generate Pythagorean Theorem img" width="100%" height="225">
+                  <img id="inputImage" src="https://uploads-ssl.webflow.com/60abcbf13c9af64a88390582/6230f5f37b84136a6985b3df_899889.jpg" alt="AI generate Pythagorean Theorem img" width="100%" height="225">
                   <div class="card-body">
-                    <p class="card-text">Your Example Here!</p>
+                    <p id = "inputText" class="card-text">Your Example Here!</p>
                     <div class="d-flex justify-content-between align-items-center">
-                      <small class="text-body-secondary">Prompt: (Generated from keywords extracted from your notes, using a separate LLM from Amazon)</small>
+                      <small id = "inputKeyword" class="text-body-secondary">Prompt: (Generated from keywords extracted from your notes, using a separate LLM from Amazon)</small>
                     </div>
                   </div>
                 </div>
@@ -64,7 +64,7 @@
 
               <div class="col">
                 <div class="card shadow-sm">
-                  <img src="DemoImages/Confucious.png" alt="AI generate Pythagorean Theorem img" width="100%" height="225">
+                  <img src="../static/DemoImages/Confucious.png" alt="AI generate Pythagorean Theorem img" width="100%" height="225">
                   <div class="card-body">
                     <p class="card-text">Example 2: Confucious the Philosopher. A look at Eastern Philosophy.</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -94,5 +94,6 @@
             </footer>
         </div>
       </main>
+<script src="{{ url_for('static', filename='JS/files.js') }}"></script>
 </body>
 </html>
