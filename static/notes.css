@@ -1,0 +1,14 @@
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+.column {
+    float: left;
+    width: 32%;
+    padding: 10px;
+  }
+#notes{
+    overflow-wrap: anywhere;
+}

@@ -1,0 +1,27 @@
+
+<html>
+   <head>
+      <title>success</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='notes.css') }}">
+   </head>
+   <body>
+      <p>File uploaded successfully</p>
+      <p>File Name: {{name}}</p>
+
+      <div class="row">
+         <div class="column">
+            <h2>1</h2>
+            <img src="../static/images/test.PNG" alt="Test" />
+         </div>
+         <div class="column">
+            <h2>2</h2>
+            <p id="notes">{{data}}</p>
+         </div>
+         <div class="column">
+            <h2>3</h2>
+            <p>hello</p>
+         </div>
+       </div>
+
+   </body>
+</html>
