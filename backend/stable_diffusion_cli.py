@@ -183,7 +183,7 @@ def entrypoint(
         f"prompt => {prompt}, steps => {steps}, samples => {samples}, batch_size => {batch_size}"
     )
 
-    dir = Path("/tmp/stable-diffusion")
+    dir = Path("../static/images/")
     if not dir.exists():
         dir.mkdir(exist_ok=True, parents=True)
 

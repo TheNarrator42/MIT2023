@@ -1,0 +1,28 @@
+
+<html>
+   <head>
+      <title>success</title>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='notes.css') }}">
+   </head>
+   <body>
+      <p>Text Read Successfully</p>
+
+      <div class="row">
+         <div class="column">
+            <h2>1</h2>
+            <img src="../static/images/you.PNG" alt="you" class = "widthSet" />
+         </div>
+         <div class="column">
+            <h2>2</h2>
+            <p id="notes">{{data}}</p>
+         </div>
+         <div class="column">
+            <h2>3</h2>
+            {% for image_name in image_names %}
+            <img src="{{ url_for('static', filename='images/' + image_name) }}" alt="{{ image_name }}" class = "widthSet">
+            {% endfor %}
+         </div>
+       </div>
+
+   </body>
+</html>

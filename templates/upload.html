@@ -1,11 +1,12 @@
 <html>  
 <head>  
-    <title>upload the file</title>  
+    <title>Upload the file or Type some text</title>  
 </head>  
 <body>  
     <form action = "/display" method = "post" enctype="multipart/form-data">  
-        <input type="file" name="file" />  
+        <input id="uploadFile" type="file" name="file" />  
+        <input id ="inputText" type="text" name="userInput"/>
         <input type = "submit" value="Upload">  
-    </form>  
+    </form>
 </body>  
 </html>
